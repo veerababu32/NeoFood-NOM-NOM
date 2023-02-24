@@ -1,0 +1,106 @@
+.explore-container {
+  margin: 0 0 60px 0;
+}
+
+.accordion {
+  margin-bottom: 16px;
+}
+
+.accordion:last-child {
+  margin-bottom: 0;
+}
+
+.explore-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  color: #282828;
+  margin-bottom: 20px;
+}
+
+.explore-accordion-item {
+  background: #ffffff;
+  border: 0.8px solid rgba(40, 40, 40, 0.2);
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.explore-accordion-item:last-child {
+  margin-bottom: 0;
+}
+
+.explore-accordion-button {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: #282828;
+  margin-bottom: 0;
+  border-radius: 10px;
+}
+
+.explore-accordion-button::after {
+  content: "\002B";
+  background: none;
+  font-size: 24px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.explore-accordion-button:not(.collapsed)::after {
+  content: "\2212";
+  background: none;
+  font-size: 24px;
+  position: absolute;
+  right: 26px;
+  bottom: 14px;
+}
+
+@media screen and (max-width: 576px) {
+  .explore-title {
+    font-size: 32px;
+    line-height: normal;
+  }
+
+  .explore-accordion-button {
+    font-size: 14px;
+  }
+
+  .explore-accordion-button::after {
+    font-size: 20px;
+    right: 14px;
+    bottom: 15px;
+  }
+
+  .explore-accordion-button:not(.collapsed)::after {
+    font-size: 20px;
+    right: 22px;
+    bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .explore-title {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .explore-accordion-button {
+    font-size: 12px;
+  }
+
+  .explore-accordion-button::after {
+    font-size: 18px;
+    right: 10px;
+    bottom: 13px;
+  }
+
+  .explore-accordion-button:not(.collapsed)::after {
+    font-size: 18px;
+    right: 18px;
+    bottom: 12px;
+  }
+}
